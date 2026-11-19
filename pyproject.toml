@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "brightloop-ai"
+version = "0.1.0"
+description = "A human-approved, local-first AI workflow assistant."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "BrightLoop contributors" }]
+keywords = ["ai", "automation", "claude", "workflow", "human-in-the-loop", "open-source"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Office/Business",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = ["anthropic>=0.40.0"]
+
+[project.scripts]
+brightloop = "brightloop.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/Skunkamola/brightloop-ai"
+Repository = "https://github.com/Skunkamola/brightloop-ai"
+Issues = "https://github.com/Skunkamola/brightloop-ai/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

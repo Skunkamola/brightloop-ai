@@ -1,0 +1,14 @@
+{
+  "summary": "Create a simple weekly study plan and record the setup.",
+  "actions": [
+    {
+      "type": "write_note",
+      "title": "Weekly Study Plan",
+      "content": "## Weekly focus\n\n- Monday: Mathematics revision\n- Tuesday: Physics practice\n- Wednesday: Chemistry review\n- Thursday: Past questions\n- Friday: Review difficult topics\n- Saturday: Mixed practice\n- Sunday: Rest and plan the next week"
+    },
+    {
+      "type": "append_log",
+      "content": "Created a weekly study plan with BrightLoop."
+    }
+  ]
+}
